@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100svh;
+    background-color: #070724;
+    background-image: url(/assets/background-stars.svg);
+}
+
+h1, h2{
+    font-family: 'Antonio', sans-serif;
+}
+
+h3,h4{
+    font-family: 'League Spartan', sans-serif;
+}
+p{
+    font-family: 'League Spartan', sans-serif;
+}
+
+.mobile__nav{
+    background-image: url(/assets/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+}
+
+header{
+    padding: 16px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-title{
+    color: white;
+}
+
+
+.nav-top{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    border-top:1px solid #38384F ;
+    border-bottom:1px solid #38384F ;
+}
+
+.nav-top__item{
+    font-family: "League Spartan", sans-serif;
+    list-style: none;
+    color: #38384F;
+    display: block;
+}
+
+.top-active{
+    color: white;
+    line-height: 50px;
+
+    height: 100%;
+
+    border-bottom: 4px solid #419EBB;
+}
+
+
+.planet{
+    padding-top: 80px;
+    display: flex;
+flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items:center ;
+}
+
+.planet__mercury--face img{
+    height: 111px;
+    width: 111px;
+}
+
+.planet__info{
+    text-align: center;
+    padding: 20px;
+}
+
+.planet__title {
+    padding-top: 80px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.planet__desc {
+    padding-top: 10px;
+    color: rgb(180, 175, 175);
+    font-size: 18px;
+}
+
+
+.planet__source {
+    font-family: "Leauge Spartan", sans-serif;
+    text-align: center;
+    color: #38384F;
+}
+.planet__source a{
+    font-weight: bold;
+    color: #838391;
+    text-decoration: underline;
+}
+
+.info-wrapper{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 280px;
+}
+
+.info-wrapper li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 10px;
+    padding: 5px;
+    border: 1px solid #D8D8D8;
+    height: 50px;
+    color: #D8D8D8;
+}
+
+#rotation,#revolution,#radius,#temp{
+    font-family: "Antonio", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    
+}
+
+.planet__desc--structure, .planet__desc--surface{
+    display: none;
+}
+.planet__geology,.planet__structure{
+    display: none;
+}
+
+@media (max-width:500px) {
+    
+}
