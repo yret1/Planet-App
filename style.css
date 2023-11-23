@@ -22,11 +22,45 @@ p{
     font-family: 'League Spartan', sans-serif;
 }
 
+@keyframes bg-spin {
+    0%{transform: rotate(0deg);};
+    100%{transform: rotate(360deg);}
+}
+
 .mobile__nav{
-    background-image: url(/assets/icon-hamburger.svg);
+    background-image:animation bg-spin 1s linear url(/assets/icon-hamburger.svg);
     background-repeat: no-repeat;
     height: 20px;
     width: 20px;
+}
+
+.menutoggle{
+    display: none;
+    position: relative;
+    background-color: #070724;
+    overflow: hidden;
+    top: 40px;
+    right: 360px;
+    width: 100vw;
+
+}
+.menutoggle a{
+    padding: 10px;
+    color: white;
+    display: flex;
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid white;
+}
+.menutoggle div{
+    background-color: #419EBB;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+#mars{
+    background-color:red ;
 }
 
 header{
