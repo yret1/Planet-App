@@ -4,59 +4,119 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="menuman.js" defer></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">  
+  <title>Jupiter</title>
+
   
-  <title>Frontend Mentor | Planets fact site</title>
 </head>
 <body>
-  Jupiter
-
-  <!-- Overview Content Start -->
-
-  Jupiter is the fifth planet from the Sun and the largest in the Solar System. 
-  It is a gas giant with a mass two and a half times that of all the other 
-  planets in the Solar System combined, but less than one-thousandth the mass 
-  of the Sun.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Jupiter -->
-
-  <!-- Overview Content End -->
-
-  <!-- Internal Structure Content Start -->
-
-  When the Juno arrived in 2016, it found that Jupiter has a very diffuse core 
-  that mixes into its mantle. A possible cause is an impact from a planet of 
-  about ten Earth masses a few million years after Jupiter's formation, which 
-  would have disrupted an originally solid Jovian core.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Jupiter#Internal_structure -->
-
-  <!-- Internal Structure Content End -->
-
-  <!-- Surface Geology Content Start -->
-
-  The best known feature of Jupiter is the Great Red Spot, a persistent 
-  anticyclonic storm located 22° south of the equator. It is known to have 
-  existed since at least 1831, and possibly since 1665.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Jupiter#Great_Red_Spot_and_other_vortices -->
-
-  <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  9.93 Hours
-
-  Revolution Time
-  11.86 Years
-
-  Radius
-  69,911 KM
-
-  Average Temp.
-  -108°c
+  <header>
+    <h1 class="head-title">THE PLANETS</h1>
+    <nav class="mobile__nav" id="menuclick">
+      <section class="menutoggle" id="menushow">
+        <a href="index.html">
+          <section class="mobile__nav-item">
+            <div id="mercury"></div>
+            <p>MERCURY</p>
+          </section>
+          <img src="/assets/icon-chevron.svg" alt="">
+        </a>
+        <a href="venus.html">
+          <section class="mobile__nav-item">
+            <div id="venus"></div>
+            <p>VENUS</p>
+          </section>
+          <img src="/assets/icon-chevron.svg" alt="">
+        </a>
+        <a href="earth.html">
+          <section class="mobile__nav-item">
+            <div id="earth"></div>
+            <p>EARTH</p>
+          </section>
+          <img src="/assets/icon-chevron.svg" alt="">
+        </a>
+        <a href="mars.html">
+          <section class="mobile__nav-item">
+            <div id="mars"></div>
+            <p>MARS</p>
+          </section>
+          <img src="/assets/icon-chevron.svg" alt="">
+        </a>
+        <a href="jupiter.html">
+          <section class="mobile__nav-item">
+            <div id="jupiter"></div>
+            <p>JUPITER</p>
+          </section>
+          <img src="/assets/icon-chevron.svg" alt="">
+        </a>
+        <a href="saturn.html">
+          <section class="mobile__nav-item">
+            <div id="saturn"></div>
+            <p>SATURN</p>
+          </section>
+          <img src="/assets/icon-chevron.svg" alt="">
+        </a>
+        <a href="uranus.html">
+          <section class="mobile__nav-item">
+           <div id="uranus"></div>
+           <p>URANUS</p>
+         </section>
+         <img src="/assets/icon-chevron.svg" alt="">
+       </a>
+        <a href="neptune.html">
+          <section class="mobile__nav-item">
+            <div id="neptune"></div>
+            <p>NEPTUNE</p>
+          </section>
+          <img src="/assets/icon-chevron.svg" alt="">
+        </a>
+      </section>
+    </nav>
+  </header>
+  <ul class="nav-top">
+    <li class="nav-top__item top-active" id="mob-top1">OVERVIEW</li>
+    <li class="nav-top__item" id="mob-top2">STRUCTURE</li>
+    <li class="nav-top__item" id="mob-top3">SURFACE</li>
+  </ul>
+  <main>
+    <article class="planet">  
+      <picture class="planet__mercury--face">
+        <img class="planet__base" id="planetimage" src="" alt="mercury">
+        <img class="planet__structure" id="planetimage-internal" src="" alt="mercury-crust">
+        <img class="planet__geology" id="planetimage-geology" src="" alt="mercury-surface">
+      </picture>
+      <section class="planet__info">
+        <h2 class="planet__title head-title" id="planettitle"></h2>
+        <p class="planet__desc desc-text" id="planetdesc"></p>
+        <p class="planet__desc planet__desc--structure" id="structure">.</p>
+        <p class="planet__desc planet__desc--surface" id="surface"></p>
+      </section>
+    </article>
+    <section class="planet__source">Source:
+      <a href="">Wikipedia <img src="/assets/icon-source.svg" alt=""></a>
+    </section>
+    <ul class="info-wrapper">
+      <li class="info__rotation">
+        <p class="desc-text">ROTATION TIME</p>
+        <div id="rotation"></div>
+      </li>
+      <li class="info__revolution">
+        <p class="desc-text">REVOLUTION TIME</p>
+        <div id="revolution"></div>
+      </li>
+      <li class="info__radius">
+        <p class="desc-text">RADIUS</p>
+        <div id="radius"></div>
+      </li>
+      <li class="info__temp">
+        <p class="desc-text">AVERAGE TEMP</p>
+        <div id="temp"></div>
+      </li>
+    </ul>
+  </main>
 </body>
 </html>

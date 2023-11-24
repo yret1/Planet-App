@@ -69,6 +69,20 @@ const nav = (() => {
     layerChange();
 })();
 
+
+const mobileMenu = (() => {
+
+    let menuButton = document.getElementById("menuclick");
+    let menuDisplay = document.getElementById("menushow")
+
+
+    menuButton.addEventListener("click", () => {
+        menuDisplay.style.display = "inline-block"
+
+        menuDisplay.style.translate = "-416px"
+    })
+})();
+
 const loadJson = (() => {
     document.addEventListener("DOMContentLoaded", () => {
         const pageTitle = document.title;

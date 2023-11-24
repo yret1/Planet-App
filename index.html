@@ -8,8 +8,7 @@
 
   <script src="menuman.js" defer></script>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">  
   <title>Mercury</title>
 
   
@@ -17,16 +16,64 @@
 <body>
   <header>
     <h1 class="head-title">THE PLANETS</h1>
-    <nav class="mobile__nav">
-      <section class="menutoggle" id="menuclick">
-        <a href="index.html"><div id="merc"></div>MERCURY</a>
-        <a href="index.html"><div id="ven"></div>VENUS</a>
-        <a href="index.html"><div id="earth"></div>EARTH</a>
-        <a href="index.html"><div id="mars"></div>MARS</a>
-        <a href="index.html"><div id="jup"></div>JUPITER</a>
-        <a href="index.html"><div id="sat"></div>SATURN</a>
-        <a href="index.html"><div id="ura"></div>URANUS</a>
-        <a href="index.html"><div id="nep"></div> NEPTUNE</a>
+    <nav class="mobile__nav" id="menuclick">
+      <section class="menutoggle" id="menushow">
+        <a href="index.html">
+          <section class="mobile__nav-item">
+            <div id="mercury"></div>
+            <p>MERCURY</p>
+          </section>
+          <img src="/assets/icon-chevron.svg" alt="">
+        </a>
+        <a href="venus.html">
+          <section class="mobile__nav-item">
+            <div id="venus"></div>
+            <p>VENUS</p>
+          </section>
+          <img src="/assets/icon-chevron.svg" alt="">
+        </a>
+        <a href="earth.html">
+          <section class="mobile__nav-item">
+            <div id="earth"></div>
+            <p>EARTH</p>
+          </section>
+          <img src="/assets/icon-chevron.svg" alt="">
+        </a>
+        <a href="mars.html">
+          <section class="mobile__nav-item">
+            <div id="mars"></div>
+            <p>MARS</p>
+          </section>
+          <img src="/assets/icon-chevron.svg" alt="">
+        </a>
+        <a href="jupiter.html">
+          <section class="mobile__nav-item">
+            <div id="jupiter"></div>
+            <p>JUPITER</p>
+          </section>
+          <img src="/assets/icon-chevron.svg" alt="">
+        </a>
+        <a href="saturn.html">
+          <section class="mobile__nav-item">
+            <div id="saturn"></div>
+            <p>SATURN</p>
+          </section>
+          <img src="/assets/icon-chevron.svg" alt="">
+        </a>
+        <a href="uranus.html">
+          <section class="mobile__nav-item">
+           <div id="uranus"></div>
+           <p>URANUS</p>
+         </section>
+         <img src="/assets/icon-chevron.svg" alt="">
+       </a>
+        <a href="neptune.html">
+          <section class="mobile__nav-item">
+            <div id="neptune"></div>
+            <p>NEPTUNE</p>
+          </section>
+          <img src="/assets/icon-chevron.svg" alt="">
+        </a>
       </section>
     </nav>
   </header>
@@ -37,11 +84,13 @@
   </ul>
   <main>
     <article class="planet">  
+      <section>
       <picture class="planet__mercury--face">
         <img class="planet__base" id="planetimage" src="" alt="mercury">
         <img class="planet__structure" id="planetimage-internal" src="" alt="mercury-crust">
         <img class="planet__geology" id="planetimage-geology" src="" alt="mercury-surface">
       </picture>
+    </section>
       <section class="planet__info">
         <h2 class="planet__title head-title" id="planettitle"></h2>
         <p class="planet__desc desc-text" id="planetdesc"></p>

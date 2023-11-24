@@ -22,13 +22,8 @@ p{
     font-family: 'League Spartan', sans-serif;
 }
 
-@keyframes bg-spin {
-    0%{transform: rotate(0deg);};
-    100%{transform: rotate(360deg);}
-}
-
 .mobile__nav{
-    background-image:animation bg-spin 1s linear url(/assets/icon-hamburger.svg);
+    background-image:url(/assets/icon-hamburger.svg);
     background-repeat: no-repeat;
     height: 20px;
     width: 20px;
@@ -40,14 +35,20 @@ p{
     background-color: #070724;
     overflow: hidden;
     top: 40px;
-    right: 360px;
     width: 100vw;
+    left: 60px;
+
+    transition: 1s;
+
+    box-shadow: 0 0 30px white;
 
 }
 .menutoggle a{
     padding: 10px;
     color: white;
+    width: 100%;
     display: flex;
+    justify-content: space-around;
     text-decoration: none;
     font-size: 20px;
     border: 1px solid white;
@@ -58,11 +59,38 @@ p{
     width: 20px;
     border-radius: 50%;
 }
-
-#mars{
-    background-color:red ;
+.mobile__nav-item{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    justify-content: space-between;
 }
 
+#mercury{
+    background: #DEF4FC;
+}
+#venus{
+    background: #F7CC7F;
+}
+#earth{
+    background: #545BFE;
+}
+#mars{
+    background:#FF6A45 ;
+}
+#jupiter{
+    background: #ECAD7A;
+}
+#saturn{
+    background: #FCCB6B;
+}
+#uranus{
+    background: #65F0D5;
+}
+#neptune{
+    background: #497EFA;
+}
 header{
     padding: 16px;
     align-items: center;
@@ -102,7 +130,7 @@ header{
 
 
 .planet{
-    padding-top: 80px;
+    height: 500px;
     display: flex;
 flex-direction: column;
     width: 100%;
