@@ -108,6 +108,8 @@ const loadJson = (() => {
                 const planetRadius = document.getElementById("radius");
                 const planetTemp = document.getElementById("temp");
 
+                const wikiSource = document.getElementById("wikisource")
+
                 const pageIndex = getPageIndex(pageTitle);
 
                 console.log(pageIndex)
@@ -132,6 +134,10 @@ const loadJson = (() => {
                     planetRevolution.innerText = planetData.revolution
                     planetRadius.innerText = planetData.radius
                     planetTemp.innerText = planetData.temperature
+
+                    //Wiki Facts
+
+                    wikiSource.href = planetData.overview.source
 
                     // Add debugging logs
                     console.log("Data displayed:", planetData);
