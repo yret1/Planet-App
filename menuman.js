@@ -3,7 +3,11 @@ const nav = (() => {
         let buttons = [
             document.getElementById("mob-top1"),
             document.getElementById("mob-top2"),
-            document.getElementById("mob-top3")
+            document.getElementById("mob-top3"),
+            document.getElementById("desk-top1"),
+            document.getElementById("desk-top2"),
+            document.getElementById("desk-top3")
+
         ];
 
         let base = document.getElementById("planetimage");
@@ -56,6 +60,39 @@ const nav = (() => {
                     geologyText.style.display = "none";
                     break;
                 case "mob-top3":
+                    console.log("Switching to mob-top3");
+                    base.style.display = "none";
+                    baseText.style.display = "none";
+
+                    internal.style.display = "none";
+                    internalText.style.display = "none";
+
+                    geology.style.display = "flex";
+                    geologyText.style.display = "flex";
+                    break;
+                case "desk-top1":
+                    console.log("Switching to mob-top1");
+                    base.style.display = "flex";
+                    baseText.style.display = "flex";
+
+                    internal.style.display = "none";
+                    internalText.style.display = "none";
+
+                    geology.style.display = "none";
+                    geologyText.style.display = "none";
+                    break;
+                case "desk-top2":
+                    console.log("Switching to mob-top2");
+                    base.style.display = "none";
+                    baseText.style.display = "none";
+
+                    internal.style.display = "flex";
+                    internalText.style.display = "flex";
+
+                    geology.style.display = "none";
+                    geologyText.style.display = "none";
+                    break;
+                case "desk-top3":
                     console.log("Switching to mob-top3");
                     base.style.display = "none";
                     baseText.style.display = "none";

@@ -11,3 +11,21 @@
     width: 130px;
     height: 130px;
 }
+
+@media (min-width: 600px){
+
+    .planet__image{
+        width: 190px;
+        height: 190px;
+    }
+
+    .top-active{
+        background-color: #D14C32;
+        border: 1px solid white;
+        height: 40px;
+    }
+    .top-active span{
+        color: rgb(170, 169, 169);
+    }
+
+}

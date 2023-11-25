@@ -118,6 +118,12 @@ header{
     color: #38384F;
     display: block;
 }
+.nav-top--deskandpad{
+    display: none;
+}
+.nav-deskandpad{
+    display: none;
+}
 
 
 .planet{
@@ -208,6 +214,126 @@ flex-direction: column;
     display: none;
 }
 
-@media (max-width:500px) {
+@media (min-width:600px) {
+
+    main{
+        height: 100svh;
+    }
+
+    header{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        font-weight: lighter;
+        font-size: 28px;
+    }
+
+    .mobile__nav{
+        display: none;
+    }
+    .nav-top{
+        display: none;
+    }
+
+    .nav-top--deskandpad{
+        width: 100%;
+        height: 60px;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        display: flex;
+        color: #FFFFFF;
+
+        border-bottom: 1px solid #979797;
+    }
+    .desk__wrapper{
+        display: flex;
+        align-items: center;
+        height: 30svh;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .nav-deskandpad{
+        padding-top: 40px;
+        height: 180px;
+        width: 35%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+    }
+
+    .planet{
+        height: 700px;
+    }
+
+
+    .planet__info{
+        text-align: center;
+        height: 150px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        width: 65%;
     
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .planet__wrapp{
+        height: 40svh;
+    }
+    .nav__item a{
+        font-family: 'League Spartan', sans-serif;
+        font-size: 18px;
+        text-decoration: none;
+        color: #D8D8D8;
+    }
+    .planet__source{
+        height: 10svh;
+    }
+
+    
+    .nav-top__item{
+        height: 40px;
+        border: 1px solid white;
+        width: 100%;
+        color: white;
+
+        display: flex;
+        padding-left: 10px;
+        align-items: center;
+    }
+    .nav-top__item span{
+        padding-right: 20px;
+        color: #838391;
+    }
+
+
+    .info-wrapper{
+        padding: 20px;
+        display: flex;
+        height: 110px;
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .info-wrapper li{
+        height: 100%;
+        width: 20vw;
+        display: inline-block;
+    }
+
+    .planet__title{
+            font-size: 48px;
+    }
+    .desc-text {
+        font-size: 15px;
+        color: #d8d8d87c;
+    }
 }
