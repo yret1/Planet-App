@@ -31,16 +31,13 @@ p{
 
 .menutoggle{
     display: none;
-    position: relative;
+    position: absolute;
     background-color: #070724;
     overflow: hidden;
-    top: 40px;
+    top: 8%;
     width: 100vw;
-    left: 60px;
-
+    height: 40svh;
     transition: 1s;
-
-    box-shadow: 0 0 30px white;
 
 }
 .menutoggle a{
@@ -58,6 +55,10 @@ p{
     height: 20px;
     width: 20px;
     border-radius: 50%;
+}
+.menutoggle a img{
+    height: 50%;
+    align-self: center;
 }
 .mobile__nav-item{
     width: 40%;
@@ -110,6 +111,8 @@ header{
     height: 50px;
     border-top:1px solid #38384F ;
     border-bottom:1px solid #38384F ;
+
+    cursor: pointer;
 }
 
 .nav-top--desk{
@@ -179,6 +182,8 @@ flex-direction: column;
     font-family: "Leauge Spartan", sans-serif;
     text-align: center;
     color: #38384F;
+
+    cursor: pointer;
 }
 .planet__source a{
     font-weight: bold;
@@ -329,6 +334,11 @@ flex-direction: column;
         display: flex;
         padding-left: 10px;
         align-items: center;
+
+        cursor: pointer;
+        &:hover{
+            background-color: #38384F;
+        }
     }
     .nav-top__item span{
         padding-right: 20px;
@@ -402,6 +412,13 @@ flex-direction: column;
         width: 55vw;
         justify-content: space-between;
         list-style: none;
+    }
+
+    .nav__item{
+        background-color: rgba(7, 7, 36, 0);
+        height: 40px;
+        width: 70px;
+        border: none;
     }
 
     .desk__wrapper{
