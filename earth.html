@@ -78,14 +78,14 @@
       </section>
     </nav>
     <ul class="nav-top--desk">
-      <li class="nav__item"><a href="index.html">MERCURY</a></li>
-      <li class="nav__item"><a href="venus.html">VENUS</a></li>
-      <li class="nav__item"><a href="earth.html">EARTH</a></li>
-      <li class="nav__item"><a href="mars.html">MARS</a></li>
-      <li class="nav__item"><a href="jupiter.html">JUPITER</a></li>
-      <li class="nav__item"><a href="saturn.html">SATURN</a></li>
-      <li class="nav__item"><a href="uranus.html">URANUS</a></li>
-      <li class="nav__item"><a href="neptune.html">NEPTUNE</a></li>
+      <li id="merc" class="nav__item"><a href="index.html">MERCURY</a></li>
+      <li id="venu" class="nav__item"><a href="venus.html">VENUS</a></li>
+      <li id="eart" class="nav__item"><a href="earth.html">EARTH</a></li>
+      <li id="mar" class="nav__item"><a href="mars.html">MARS</a></li>
+      <li id="jupi" class="nav__item"><a href="jupiter.html">JUPITER</a></li>
+      <li id="satu" class="nav__item"><a href="saturn.html">SATURN</a></li>
+      <li id="uran" class="nav__item"><a href="uranus.html">URANUS</a></li>
+      <li id="nept" class="nav__item"><a href="neptune.html">NEPTUNE</a></li>
     </ul>
   </header>
   <ul class="nav-top--deskandpad">
@@ -111,6 +111,9 @@
         <img class="planet__structure planet__image" id="planetimage-internal" src="" alt="mercury-crust">
         <img class="planet__geology planet__image" id="planetimage-geology" src="" alt="mercury-surface">
       </picture>
+      <div class="surfaceimage" id="surfaceimage">
+        <img id="planetimage-geology--hovering" src="" alt="">
+      </div>
     </section>
     <section class="desk__wrapper">
       <section class="planet__info">
@@ -129,20 +132,20 @@
       </ul>
     </section>
     </article>
-    <ul class="info-wrapper">
+    <ul class="info__box info-wrapper">
       <li class="info__rotation">
         <p class="desc-text">ROTATION TIME</p>
         <div id="rotation"></div>
       </li>
-      <li class="info__revolution">
+      <li class="info__box info__revolution">
         <p class="desc-text">REVOLUTION TIME</p>
         <div id="revolution"></div>
       </li>
-      <li class="info__radius">
+      <li class="info__box info__radius">
         <p class="desc-text">RADIUS</p>
         <div id="radius"></div>
       </li>
-      <li class="info__temp">
+      <li class="info__box info__temp">
         <p class="desc-text">AVERAGE TEMP</p>
         <div id="temp"></div>
       </li>
