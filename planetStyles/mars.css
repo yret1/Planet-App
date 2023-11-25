@@ -22,6 +22,7 @@
     .top-active{
         border: 1px solid white;
         height: 40px;
+        background-color: #D14C32;
     }
     .top-active span{
         color: rgb(170, 169, 169);
