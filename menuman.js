@@ -15,6 +15,10 @@ const nav = (() => {
         let geology = document.getElementById("planetimage-geology");
         let geologyText = document.getElementById("surface");
 
+        let wikiSource = document.getElementById("wikisource");
+        let wikiSourceInternal = document.getElementById("wikisoure-internal");
+        let wikiSourceSurface = document.getElementById("wikisource-surface");
+
         buttons.forEach(button => {
             button.addEventListener("click", handleClick);
         });
@@ -108,14 +112,14 @@ const loadJson = (() => {
                 const planetRadius = document.getElementById("radius");
                 const planetTemp = document.getElementById("temp");
 
-                const wikiSource = document.getElementById("wikisource")
+                const wikiSource = document.getElementById("wikisource");
 
                 const pageIndex = getPageIndex(pageTitle);
 
                 console.log(pageIndex)
                 console.log(pageTitle)
 
-                if (pageIndex !== -1 && pageIndex < data.length) {
+                if (pageIndex < data.length) {
                     const planetData = data[pageIndex];
 
                     planetTitle.innerText = planetData.name;
@@ -124,6 +128,7 @@ const loadJson = (() => {
                     planetGeologyText.innerText = planetData.geology.content;
 
                     //image loaders
+
                     planet.src = planetData.images.planet
                     planetInner.src = planetData.images.internal
                     planetGeology.src = planetData.images.planet
@@ -137,7 +142,7 @@ const loadJson = (() => {
 
                     //Wiki Facts
 
-                    wikiSource.href = planetData.overview.source
+                    wikiSource.href = planetData.overview.source;
 
                     // Add debugging logs
                     console.log("Data displayed:", planetData);

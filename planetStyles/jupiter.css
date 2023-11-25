@@ -1,0 +1,13 @@
+.top-active{
+    color: white;
+    line-height: 50px;
+
+    height: 100%;
+
+    border-bottom: 4px solid #D83A34;
+}
+
+.planet__image{
+    width: 220px;
+    height: 220px;
+}
