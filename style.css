@@ -36,8 +36,8 @@ p{
     overflow: hidden;
     top: 8%;
     width: 100vw;
-    height: 40svh;
     transition: 1s;
+    z-index: 2;
 
 }
 .menutoggle a{
@@ -195,6 +195,7 @@ flex-direction: column;
     position: absolute;
     top: 300px;
     display: none;
+    z-index: 1;
 }
 .surfaceimage img{
     height: 100px;
