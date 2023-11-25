@@ -29,3 +29,16 @@
     }
 
 }
+
+@media (min-width: 1100px){
+
+    .planet__image{
+        width: 290px;
+        height: 290px;
+    }
+
+    .nav-active{
+        border-bottom: 2px solid #419EBB;
+        color: white;
+    }
+}

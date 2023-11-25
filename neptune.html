@@ -77,6 +77,16 @@
         </a>
       </section>
     </nav>
+    <ul class="nav-top--desk">
+      <li id="merc" class="nav__item"><a href="index.html">MERCURY</a></li>
+      <li id="venu" class="nav__item"><a href="venus.html">VENUS</a></li>
+      <li id="eart" class="nav__item"><a href="earth.html">EARTH</a></li>
+      <li id="mars" class="nav__item"><a href="mars.html">MARS</a></li>
+      <li id="jupi" class="nav__item"><a href="jupiter.html">JUPITER</a></li>
+      <li id="satu" class="nav__item"><a href="saturn.html">SATURN</a></li>
+      <li id="uran" class="nav__item"><a href="uranus.html">URANUS</a></li>
+      <li id="nept" class="nav__item"><a href="neptune.html">NEPTUNE</a></li>
+    </ul>
   </header>
   <ul class="nav-top--deskandpad">
     <li class="nav__item"><a href="index.html">MERCURY</a></li>
@@ -108,6 +118,9 @@
         <p class="planet__desc desc-text" id="planetdesc"></p>
         <p class="planet__desc planet__desc--structure" id="structure">.</p>
         <p class="planet__desc planet__desc--surface" id="surface"></p>
+        <section class="planet__source">Source:
+          <a id="wikisource" href="">Wikipedia <img src="/assets/icon-source.svg" alt=""></a>
+        </section>
       </section>
       <ul class="nav-deskandpad">
         <li class="nav-top__item top-active" id="desk-top1"><span>01</span> OVERVIEW</li>
@@ -116,23 +129,20 @@
       </ul>
     </section>
     </article>
-    <section class="planet__source">Source:
-      <a id="wikisource" href="">Wikipedia <img src="/assets/icon-source.svg" alt=""></a>
-    </section>
-    <ul class="info-wrapper">
+    <ul class="info__box info-wrapper">
       <li class="info__rotation">
         <p class="desc-text">ROTATION TIME</p>
         <div id="rotation"></div>
       </li>
-      <li class="info__revolution">
+      <li class="info__box info__revolution">
         <p class="desc-text">REVOLUTION TIME</p>
         <div id="revolution"></div>
       </li>
-      <li class="info__radius">
+      <li class="info__box info__radius">
         <p class="desc-text">RADIUS</p>
         <div id="radius"></div>
       </li>
-      <li class="info__temp">
+      <li class="info__box info__temp">
         <p class="desc-text">AVERAGE TEMP</p>
         <div id="temp"></div>
       </li>

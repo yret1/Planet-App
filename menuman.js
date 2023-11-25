@@ -17,11 +17,8 @@ const nav = (() => {
         let internalText = document.getElementById("structure");
 
         let geology = document.getElementById("planetimage-geology");
+        let geoBox = document.getElementById("surfaceimage");
         let geologyText = document.getElementById("surface");
-
-        let wikiSource = document.getElementById("wikisource");
-        let wikiSourceInternal = document.getElementById("wikisoure-internal");
-        let wikiSourceSurface = document.getElementById("wikisource-surface");
 
         buttons.forEach(button => {
             button.addEventListener("click", handleClick);
@@ -47,6 +44,7 @@ const nav = (() => {
 
                     geology.style.display = "none";
                     geologyText.style.display = "none";
+                    geoBox.style.display = "none"
                     break;
                 case "mob-top2":
                     console.log("Switching to mob-top2");
@@ -58,6 +56,7 @@ const nav = (() => {
 
                     geology.style.display = "none";
                     geologyText.style.display = "none";
+                    geoBox.style.display = "none"
                     break;
                 case "mob-top3":
                     console.log("Switching to mob-top3");
@@ -69,6 +68,7 @@ const nav = (() => {
 
                     geology.style.display = "flex";
                     geologyText.style.display = "flex";
+                    geoBox.style.display = "block"
                     break;
                 case "desk-top1":
                     console.log("Switching to mob-top1");
@@ -80,6 +80,7 @@ const nav = (() => {
 
                     geology.style.display = "none";
                     geologyText.style.display = "none";
+                    geoBox.style.display = "none"
                     break;
                 case "desk-top2":
                     console.log("Switching to mob-top2");
@@ -91,6 +92,7 @@ const nav = (() => {
 
                     geology.style.display = "none";
                     geologyText.style.display = "none";
+                    geoBox.style.display = "none"
                     break;
                 case "desk-top3":
                     console.log("Switching to mob-top3");
@@ -102,6 +104,7 @@ const nav = (() => {
 
                     geology.style.display = "flex";
                     geologyText.style.display = "flex";
+                    geoBox.style.display = "block"
                     break;
             }
         }
@@ -138,6 +141,8 @@ const loadJson = (() => {
                 const planetInner = document.getElementById("planetimage-internal");
                 const planetGeology = document.getElementById("planetimage-geology");
 
+                const planetGeologyHover = document.getElementById("planetimage-geology--hovering");
+
                 const planetTitle = document.getElementById("planettitle");
 
                 const planetText = document.getElementById("planetdesc");
@@ -169,6 +174,8 @@ const loadJson = (() => {
                     planet.src = planetData.images.planet
                     planetInner.src = planetData.images.internal
                     planetGeology.src = planetData.images.planet
+
+                    planetGeologyHover.src = planetData.images.geology
 
                     //Planet details
 

@@ -112,6 +112,11 @@ header{
     border-bottom:1px solid #38384F ;
 }
 
+.nav-top--desk{
+    display: none;
+}
+
+
 .nav-top__item{
     font-family: "League Spartan", sans-serif;
     list-style: none;
@@ -181,6 +186,15 @@ flex-direction: column;
     text-decoration: underline;
 }
 
+.surfaceimage{
+    position: absolute;
+    top: 300px;
+    display: none;
+}
+.surfaceimage img{
+    height: 100px;
+}
+
 .info-wrapper{
     padding: 20px;
     display: flex;
@@ -214,7 +228,7 @@ flex-direction: column;
     display: none;
 }
 
-@media (min-width:600px) {
+@media (min-width:600px){
 
     main{
         height: 100svh;
@@ -235,6 +249,7 @@ flex-direction: column;
     .nav-top{
         display: none;
     }
+    .nav-top--desk{display: none;}
 
     .nav-top--deskandpad{
         width: 100%;
@@ -263,6 +278,14 @@ flex-direction: column;
         align-items: center;
         flex-direction: column;
         color: white;
+    }
+
+    .surfaceimage{
+        position: absolute;
+        top: 400px;
+    }
+    .surfaceimage img{
+        height: 150px;
     }
 
     .planet{
@@ -332,8 +355,93 @@ flex-direction: column;
     .planet__title{
             font-size: 48px;
     }
-    .desc-text {
-        font-size: 15px;
+    .planet__desc {
+        font-size: 18px;
         color: #d8d8d87c;
+    }
+
+    .nav-top--desk{
+        display: none;
+    }
+}
+
+@media (min-width:1100px){
+    body{
+        overflow: hidden;
+    }
+    header{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        border-bottom: 1px solid #38384F;
+    }
+
+
+    .nav-top--deskandpad{
+        display: none;
+    }
+    .planet{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .info-wrapper li{
+        padding: 15px;
+    }
+    
+    .info-wrapper li div{
+        font-size: 40px;
+    }
+
+
+
+    .nav-top--desk{
+        display: flex;
+        height: 100%;
+        width: 55vw;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    .desk__wrapper{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 50svh;
+        width: 30vw;
+    }
+    .planet__wrapp{
+        width: 40vw;
+        height: 60svh;
+    }
+
+    .planet__info{
+        padding: 0;
+        width: 100%;
+        text-align: left;
+    }
+    .planet__title{
+        font-size: 80px;
+        text-align: left;
+        width: 100%;
+    }
+
+    .nav-deskandpad{
+        width: 100%;
+    }
+
+    .planet__source{
+        padding-top: 10px;
+        text-align: left;
+        width: 100%;
+    }
+
+    .surfaceimage{
+        position: absolute;
+        top: 500px;
+    }
+    .surfaceimage img{
+        height: 200px;
     }
 }
